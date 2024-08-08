@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>about</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/styles2.css">
+
+</head>
+<body>
+
+    <!-- header section starts  -->
+
+<header class="header">
+
+    <section class="flex">
+
+        <a href="index.html" class="logo"> <img src="./image/logo.png" alt="FreshFair Logo"></a>
+
+        <nav class="navbar">
+            <a href="index.html" class="nav-link">home</a>
+            <div class="dropdown">
+                <a href="products.html" class="nav-link">Products</a>
+                <div class="dropdown-content">
+                  <a href="./diary.html">Diary Products</a>
+                  <a href="./vegetables.html">Vegetables</a>
+                  <a href="./cosmetics.html">Cosmetics</a>
+                  <a href="./fruits.html">Fruits</a>
+                  <a href="./meat.html">Meat and Sea Food</a>
+                  
+                </div>
+              </div>              
+            <a href="about.html" class="nav-link">about</a>
+            <a href="contact.html" class="nav-link">contact</a>
+            <a href="order.html" class="nav-link active">Order</a>
+            <a href="loyalty_registration.html" class="nav-link">Loyalty Registration</a>
+
+        </nav>
+        
+
+
+        <div class="icons">
+            <div id="menu-btn" class="fas fa-bars"></div>
+            <div id="search-btn" class="fas fa-search"></div>
+            <div id="cart-btn" class="fas fa-shopping-cart"></div>
+            <div id="login-btn" class="fas fa-user"></div>
+        </div>
+
+        <form action="" class="search-form">
+            <input type="search" placeholder="search here..." id="search-box">
+            <label for="search-box" class="fas fa-search"></label>
+        </form>
+
+        <div class="shopping-cart">
+            <div class="box">
+                <i class="fas fa-times"></i>
+                <img src="image/cart-1.jpg" alt="">
+                <div class="content">
+                    <h3>organic food</h3>
+                    <span class="quantity">1</span>
+                    <span class="multiply">x</span>
+                    <span class="price">$18.99</span>
+                </div>
+            </div>
+            <div class="box">
+                <i class="fas fa-times"></i>
+                <img src="image/cart-2.jpg" alt="">
+                <div class="content">
+                    <h3>organic food</h3>
+                    <span class="quantity">1</span>
+                    <span class="multiply">x</span>
+                    <span class="price">$18.99</span>
+                </div>
+            </div>
+            <div class="box">
+                <i class="fas fa-times"></i>
+                <img src="image/cart-3.jpg" alt="">
+                <div class="content">
+                    <h3>organic food</h3>
+                    <span class="quantity">1</span>
+                    <span class="multiply">x</span>
+                    <span class="price">$18.99</span>
+                </div>
+            </div>
+            <h3 class="total"> total : <span>56.97</span> </h3>
+            <a href="#" class="btn">checkout cart</a>
+        </div>
+
+        <form action="" class="login-form">
+            <h3>login form</h3>
+            <input type="email" placeholder="enter your email" class="box">
+            <input type="password" placeholder="enter your password" class="box">
+            <div class="remember">
+                <input type="checkbox" name="" id="remember-me">
+                <label for="remember-me">remember me</label>
+            </div>
+            <input type="submit" value="login now" class="btn">
+            <p>forget password? <a href="#">click here</a></p>
+            <p>don't have an account? <a href="#">create one</a></p>
+        </form>
+
+    </section>
+
+</header>
+
+<!-- header section ends -->
+
+<div class="heading">
+    <h1>Order</h1>
+    <p> <a href="home.html">home >></a> Order </p>
+</div>
+
+<!-- Fruits Section -->
+<div class="deals-container" id="fruits">
+    <div class="parallax">
+        <div class="Ntitle">FRUITS</div>
+    </div>
+    <div class="order-grid-container">
+        <div class="order-grid-item">
+            <img src="./Fruits/apple.jpg" alt="Apples">
+            <label for="apple">Apples (grams):</label>
+            <div class="input-container">
+                <span class="unit-symbol">g</span>
+                <input type="number" min="0" data-price="1.20" id="apple">
+            </div>
+            <p class="price-info">Price per 250 grams</p>
+            <p class="price">Price: Rs. 300</p>
+        </div>
+        <div class="order-grid-item">
+            <img src="./Fruits/banana.jpg" alt="Bananas">
+            <label for="banana">Bananas (grams):</label>
+            <div class="input-container">
+                <span class="unit-symbol">g</span>
+                <input type="number" min="0" data-price="0.75" id="banana">
+            </div>
+            <p class="price-info">Price per 250 grams</p>
+            <p class="price">Price: Rs. 188</p>
+        </div>
+        <div class="order-grid-item">
+            <img src="./Fruits/grapes.jpg" alt="Grapes">
+            <label for="grapes">Grapes (grams):</label>
+            <div class="input-container">
+                <span class="unit-symbol">g</span>
+                <input type="number" min="0" data-price="1.50" id="grapes">
+            </div>
+            <p class="price-info">Price per 250 grams</p>
+            <p class="price">Price: Rs. 375</p>
+        </div>
+        <div class="order-grid-item">
+            <img src="./Fruits/orange.jpg" alt="Oranges">
+            <label for="orange">Oranges (grams):</label>
+            <div class="input-container">
+                <span class="unit-symbol">g</span>
+                <input type="number" min="0" data-price="1.30" id="orange">
+            </div>
+            <p class="price-info">Price per 250 grams</p>
+            <p class="price">Price: Rs. 325</p>
+        </div>
+        <div class="order-grid-item">
+            <img src="./Fruits/papaya.jpg" alt="Pineapples">
+            <label for="pineapple">Pineapples (grams):</label>
+            <div class="input-container">
+                <span class="unit-symbol">g</span>
+                <input type="number" min="0" data-price="1.80" id="pineapple">
+            </div>
+            <p class="price-info">Price per 250 grams</p>
+            <p class="price">Price: Rs. 450</p>
+        </div>
+        <div class="order-grid-item">
+            <img src="./Fruits/mango.jpg" alt="Mangoes">
+            <label for="mango">Mangoes (grams):</label>
+            <div class="input-container">
+                <span class="unit-symbol">g</span>
+                <input type="number" min="0" data-price="2.20" id="mango">
+            </div>
+            <p class="price-info">Price per 250 grams</p>
+            <p class="price">Price: Rs. 550</p>
+        </div>
+    </div>
+</div>
+
+<!-- Vegetables Section -->
+<div class="deals-container" id="vegetables">
+    <div class="parallax">
+        <div class="Ntitle">VEGETABLES</div>
+    </div>
+    <div class="order-grid-container">
+        <div class="order-grid-item">
+            <img src="./vegetables/carrot.webp" alt="Carrots">
+            <label for="carrot">Carrots (grams):</label>
+            <div class="input-container">
+                <span class="unit-symbol">g</span>
+                <input type="number" min="0" data-price="0.75" id="carrot">
+            </div>
+            <p class="price-info">Price per 250 grams</p>
+            <p class="price">Price: Rs. 188</p>
+        </div>
+        <div class="order-grid-item">
+            <img src="./vegetables/broccoli.jpg" alt="Broccoli">
+            <label for="broccoli">Broccoli (grams):</label>
+            <div class="input-container">
+                <span class="unit-symbol">g</span>
+                <input type="number" min="0" data-price="1.30" id="broccoli">
+            </div>
+            <p class="price-info">Price per 250 grams</p>
+            <p class="price">Price: Rs. 325</p>
+        </div>
+        <div class="order-grid-item">
+            <img src="./vegetables/potato.jpg" alt="Potatoes">
+            <label for="potato">Potatoes (grams):</label>
+            <div class="input-container">
+                <span class="unit-symbol">g</span>
+                <input type="number" min="0" data-price="0.40" id="potato">
+            </div>
+            <p class="price-info">Price per 250 grams</p>
+            <p class="price">Price: Rs. 100</p>
+        </div>
+        <div class="order-grid-item">
+            <img src="./vegetables/spinach.avif" alt="Spinach">
+            <label for="spinach">Spinach (grams):</label>
+            <div class="input-container">
+                <span class="unit-symbol">g</span>
+                <input type="number" min="0" data-price="0.60" id="spinach">
+            </div>
+            <p class="price-info">Price per 250 grams</p>
+            <p class="price">Price: Rs. 150</p>
+        </div>
+        <div class="order-grid-item">
+            <img src="./vegetables/tomato.png" alt="Tomatoes">
+            <label for="tomato">Tomatoes (grams):</label>
+            <div class="input-container">
+                <span class="unit-symbol">g</span>
+                <input type="number" min="0" data-price="0.80" id="tomato">
+            </div>
+            <p class="price-info">Price per 250 grams</p>
+            <p class="price">Price: Rs. 200</p>
+        </div>
+        <div class="order-grid-item">
+            <img src="./vegetables/pepper.jpg" alt="Peppers">
+            <label for="pepper">Peppers (grams):</label>
+            <div class="input-container">
+                <span class="unit-symbol">g</span>
+                <input type="number" min="0" data-price="1.00" id="pepper">
+            </div>
+            <p class="price-info">Price per 250 grams</p>
+            <p class="price">Price: Rs. 250</p>
+        </div>
+    </div>
+</div>
+
+<!-- Baking and Cooking Ingredients Section -->
+<div class="deals-container" id="baking-cooking">
+    <div class="parallax">
+        <div class="Ntitle">BAKING AND COOKING INGREDIENTS</div>
+    </div>
+    <div class="order-grid-container">
+        <div class="order-grid-item">
+            <img src="./bakery/bread.jpg" alt="Bread">
+            <label for="bread">Bread (loaves):</label>
+            <div class="input-container">
+                <input type="number" min="0" data-price="90.0" id="bread">
+            </div>
+            <p class="price-info">Price per loaf</p>
+            <p class="price">Price: Rs. 90</p>
+        </div>
+        <div class="order-grid-item">
+            <img src="./bakery/muffin2.jpg" alt="Muffins">
+            <label for="muffin">Muffins (pieces):</label>
+            <div class="input-container">
+                <input type="number" min="0" data-price="36.0" id="muffin">
+            </div>
+            <p class="price-info">Price per piece</p>
+            <p class="price">Price: Rs. 36</p>
+        </div>
+        <div class="order-grid-item">
+            <img src="./bakery/crest.png" alt="Croissants">
+            <label for="croissant">Croissants (pieces):</label>
+            <div class="input-container">
+                <input type="number" min="0" data-price="54.0" id="croissant">
+            </div>
+            <p class="price-info">Price per piece</p>
+            <p class="price">Price: Rs. 54</p>
+        </div>
+        <div class="order-grid-item">
+            <img src="./bakery/cake.jpg" alt="Cake">
+            <label for="cake">Cake (slices):</label>
+            <div class="input-container">
+                <input type="number" min="0" data-price="100.0" id="cake">
+            </div>
+            <p class="price-info">Price per slice</p>
+            <p class="price">Price: Rs. 100</p>
+        </div>
+        <div class="order-grid-item">
+            <img src="./bakery/cookies.jpg" alt="Cookies">
+            <label for="cookies">Cookies (pieces):</label>
+            <div class="input-container">
+                <input type="number" min="0" data-price="15.0" id="cookies">
+            </div>
+            <p class="price-info">Price per piece</p>
+            <p class="price">Price: Rs. 15</p>
+        </div>
+        <div class="order-grid-item">
+            <img src="./bakery/pastry.jpg" alt="Pastry">
+            <label for="pastry">Pastry (pieces):</label>
+            <div class="input-container">
+                <input type="number" min="0" data-price="60.0" id="pastry">
+            </div>
+            <p class="price-info">Price per piece</p>
+            <p class="price">Price: Rs. 60</p>
+        </div>
+    </div>
+</div>
+
+<!-- Meat & Seafood Section -->
+<div class="deals-container" id="meat-seafood">
+    <div class="parallax">
+        <div class="Ntitle">MEAT & SEAFOOD</div>
+    </div>
+    <div class="order-grid-container">
+        <div class="order-grid-item">
+            <img src="./meat/Chicken.jpg" alt="Chicken">
+            <label for="chicken">Chicken (grams):</label>
+            <div class="input-container">
+                <span class="unit-symbol">g</span>
+                <input type="number" min="0" data-price="0.90" id="chicken">
+            </div>
+            <p class="price-info">Price per 250 grams</p>
+            <p class="price">Price: Rs. 225</p>
+        </div>
+        <div class="order-grid-item">
+            <img src="./meat/hurulla.jpg" alt="Fish">
+            <label for="fish">Fish (grams):</label>
+            <div class="input-container">
+                <span class="unit-symbol">g</span>
+                <input type="number" min="0" data-price="1.80" id="fish">
+            </div>
+            <p class="price-info">Price per 250 grams</p>
+            <p class="price">Price: Rs. 450</p>
+        </div>
+        <div class="order-grid-item">
+            <img src="./meat/prawns.jpg" alt="Shrimp">
+            <label for="shrimp">Shrimp (grams):</label>
+            <div class="input-container">
+                <span class="unit-symbol">g</span>
+                <input type="number" min="0" data-price="2.70" id="shrimp">
+            </div>
+            <p class="price-info">Price per 250 grams</p>
+            <p class="price">Price: Rs. 675</p>
+        </div>
+        <div class="order-grid-item">
+            <img src="./meat/beefcubes.jpg" alt="Beef">
+            <label for="beef">Beef (grams):</label>
+            <div class="input-container">
+                <span class="unit-symbol">g</span>
+                <input type="number" min="0" data-price="2.00" id="beef">
+            </div>
+            <p class="price-info">Price per 250 grams</p>
+            <p class="price">Price: Rs. 500</p>
+        </div>
+        <div class="order-grid-item">
+            <img src="./meat/pork cubs.jpg" alt="Pork">
+            <label for="pork">Pork (grams):</label>
+            <div class="input-container">
+                <span class="unit-symbol">g</span>
+                <input type="number" min="0" data-price="1.60" id="pork">
+            </div>
+            <p class="price-info">Price per 250 grams</p>
+            <p class="price">Price: Rs. 400</p>
+        </div>
+        <div class="order-grid-item">
+            <img src="./meat/crab.jpg" alt="Crab">
+            <label for="crab">Crab (grams):</label>
+            <div class="input-container">
+                <span class="unit-symbol">g</span>
+                <input type="number" min="0" data-price="2.50" id="crab">
+            </div>
+            <p class="price-info">Price per 250 grams</p>
+            <p class="price">Price: Rs. 625</p>
+        </div>
+    </div>
+</div>
+
+<!-- Dairy Products Section -->
+<div class="deals-container" id="dairy-products">
+    <div class="parallax">
+        <div class="Ntitle">DAIRY PRODUCTS</div>
+    </div>
+    <div class="order-grid-container">
+        <div class="order-grid-item">
+            <img src="./dairy 2/milk.png" alt="Milk">
+            <label for="milk">Milk (liters):</label>
+            <div class="input-container">
+                <input type="number" min="0" data-price="180.0" id="milk">
+            </div>
+            <p class="price-info">Price per liter</p>
+            <p class="price">Price: Rs. 180</p>
+        </div>
+        <div class="order-grid-item">
+            <img src="./dairy 2/cheese.jpg" alt="Cheese">
+            <label for="cheese">Cheese (grams):</label>
+            <div class="input-container">
+                <span class="unit-symbol">g</span>
+                <input type="number" min="0" data-price="3.60" id="cheese">
+            </div>
+            <p class="price-info">Price per 250 grams</p>
+            <p class="price">Price: Rs. 900</p>
+        </div>
+        <div class="order-grid-item">
+            <img src="./dairy 2/yourghurt.jpg" alt="Yogurt">
+            <label for="yogurt">Yogurt (grams):</label>
+            <div class="input-container">
+                <span class="unit-symbol">g</span>
+                <input type="number" min="0" data-price="1.10" id="yogurt">
+            </div>
+            <p class="price-info">Price per 250 grams</p>
+            <p class="price">Price: Rs. 275</p>
+        </div>
+        <div class="order-grid-item">
+            <img src="./dairy 2/butter.jpg" alt="Butter">
+            <label for="butter">Butter (grams):</label>
+            <div class="input-container">
+                <span class="unit-symbol">g</span>
+                <input type="number" min="0" data-price="4.00" id="butter">
+            </div>
+            <p class="price-info">Price per 250 grams</p>
+            <p class="price">Price: Rs. 1000</p>
+        </div>
+        <div class="order-grid-item">
+            <img src="./dairy 2/cream.avif" alt="Cream">
+            <label for="cream">Cream (grams):</label>
+            <div class="input-container">
+                <span class="unit-symbol">g</span>
+                <input type="number" min="0" data-price="2.50" id="cream">
+            </div>
+            <p class="price-info">Price per 250 grams</p>
+            <p class="price">Price: Rs. 625</p>
+        </div>
+        <div class="order-grid-item">
+            <img src="./dairy 2/ice cream.jpg" alt="Ice Cream">
+            <label for="icecream">Ice Cream (grams):</label>
+            <div class="input-container">
+                <span class="unit-symbol">g</span>
+                <input type="number" min="0" data-price="2.00" id="icecream">
+            </div>
+            <p class="price-info">Price per 250 grams</p>
+            <p class="price">Price: Rs. 500</p>
+        </div>
+    </div>
+</div>
+
+
+<button id="add-to-cart">Add to Cart</button>
+
+<h2>Order Summary</h2>
+<table id="order-summary">
+<thead>
+    <tr>
+        <th>Item</th>
+        <th>Quantity/Weight</th>
+        <th>Price (LKR)</th>
+        <th>Remove</th>
+    </tr>
+</thead>
+<tbody>
+</tbody>
+<tfoot>
+    <tr>
+        <td colspan="2">Total</td>
+        <td id="total-price">Rs. 0.00</td>
+        <td></td>
+    </tr>
+</tfoot>
+</table>
+
+<button id="buy-now">Buy Now</button>
+<button id="save-summary">Save and Proceed to Payment</button>
+
+<button id="add-favourites">Add to Favourites</button>
+<button id="apply-favourites">Apply Favourites</button>
+
+<!-- footer section starts  -->
+
+<footer class="footer">
+
+    <section class="box-container">
+    
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="home.html"> <i class="fas fa-arrow-right"></i> home</a>
+            <a href="shop.html"> <i class="fas fa-arrow-right"></i> shop</a>
+            <a href="about.html"> <i class="fas fa-arrow-right"></i> about</a>
+            <a href="review.html"> <i class="fas fa-arrow-right"></i> review</a>
+            <a href="blog.html"> <i class="fas fa-arrow-right"></i> blog</a>
+            <a href="contact.html"> <i class="fas fa-arrow-right"></i> contact</a>
+        </div>
+
+        <div class="box">
+            <h3>extra links</h3>
+            <a href="#"> <i class="fas fa-arrow-right"></i> my order </a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> my favorite </a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> my wishlist </a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> my account </a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> terms or use </a>
+        </div>
+
+        <div class="box">
+            <h3>follow us</h3>
+            <a href="#"> <i class="fab fa-facebook-f"></i> facebook </a>
+            <a href="#"> <i class="fab fa-twitter"></i> twitter </a>
+            <a href="#"> <i class="fab fa-instagram"></i> instagram </a>
+            <a href="#"> <i class="fab fa-linkedin"></i> linkedin </a>
+            <a href="#"> <i class="fab fa-pinterest"></i> pinterest </a>
+        </div>
+
+        <div class="box">
+            <h3>newsletter</h3>
+            <p>subscribe for latest updates</p>
+            <form action="">
+                <input type="email" placeholder="enter your email">
+                <input type="submit" value="subscribe" class="btn">
+            </form>
+            <img src="image/payment.png" class="payment" alt="">
+        </div>
+    
+    </section>
+
+</footer>
+
+<div class="credit">
+    <i class="far fa-copyright fa-lx"></i>2024 BY FreshFair
+</div>
+<!-- footer section ends -->
+
+
+
+<script src="./js/script2.js"></script>
+</body>
+</html>

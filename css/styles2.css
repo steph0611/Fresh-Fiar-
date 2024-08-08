@@ -1,0 +1,108 @@
+.order-grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.order-grid-item {
+    background-color: #fff;
+    width: 300px;
+    height: 450px;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.2s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.order-grid-item:hover {
+    transform: scale(1.05);
+}
+
+.order-grid-item img {
+    width: 100%;
+    height: 100%;  /* Adjust height to fill container */
+    object-fit: contain;  /* Ensures entire image is visible and fits inside container */
+    border-radius: 8px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 16px;
+    color: #555;
+}
+
+.price-info {
+    font-size: 14px;
+    color: #888;
+    margin-top: 5px;
+}
+
+.input-container {
+    position: relative;
+    display: inline-block;
+}
+
+input[type="number"] {
+    width: 80px;
+    padding: 5px 5px 5px 20px;
+    font-size: 14px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    transition: border-color 0.2s ease;
+}
+
+input[type="number"]:focus {
+    border-color: #006400;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.unit-symbol {
+    position: absolute;
+    left: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 14px;
+    color: #555;
+}
+
+button {
+    background-color: #006400;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.2s ease;
+}
+
+button:hover {
+    background-color: #004d00;
+}
+
+.price {
+    font-size: 1.5em; /* Adjust the size as needed */
+    font-weight: bold;
+    color: #000; /* You can also change the color if needed */
+    margin-top: 5px; /* Add some space above the price */
+}
+
